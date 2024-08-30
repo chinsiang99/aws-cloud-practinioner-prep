@@ -68,3 +68,35 @@ Made up of copper wires and global network of billions of devices
 4. Increase speed and agility
 5. Stop spending money running and maintaining data centers
 6. Go global in minutes
+
+## AWS Well-Architected Framework
+- Allows Organizations to build the most secure, durable, efficient, and high-performing IT infrastructure possible
+
+1. Avoid Unnecessary Cost (Cost Optimization)
+    - Use only what you need
+    - Reserve resources in advance
+    - Continue to monitor for optimization
+
+2. Reliability
+    - Test disaster recovery settings
+    - Incorporate redundancy
+    - Have duplicate copies of resources
+
+3. Efficiency (Performance)
+    - The ability to use computing resources to adjust the system requirements
+    - it should allow for more experimentation and when a change is set in motion, should be able to global in minutes
+
+4. Security (Infrastructure)
+    - Best practices should be automated
+    - Data should always be protected
+    - Enable traceability
+    - Manage access
+
+5. Operational Excellence
+    - Document everything
+    - Refine operational procedures
+    - Anticipate failure
+    - Update processes
+    - Learn from Failures
+
+If these five practices are taken into account and optimized, you will have a highly-performing, stable IT infrastructure that allow your organization to save money, time and resources
