@@ -9,6 +9,7 @@
 
 ## What is cloud?
 - It is actually the Internet !
+- global network of connected devices
 
 ## The Internet
 - Worldwide Network
@@ -16,4 +17,6 @@
 - Communication
 - created and connected using cables
 
-![cloud-internet](cloud-internet.png)
+<div align="center">
+  <img src="./cloud-internet.png" alt="cloud internet" width="300"/>
+</div>
