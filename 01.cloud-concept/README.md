@@ -100,3 +100,54 @@ Made up of copper wires and global network of billions of devices
     - Learn from Failures
 
 If these five practices are taken into account and optimized, you will have a highly-performing, stable IT infrastructure that allow your organization to save money, time and resources
+
+## AWS Cloud Adoption Framework (AWS CAF)
+- Best practices to help successful IT infrastructure migration to the cloud
+- Migrating to the cloud takes a lot of collaboration with different stakeholders
+- Provides recommendations for implementing, adopting, configuring, and maintaining effective workflows in the cloud
+
+### AWS CAF Cloud Transformation Value Chain
+1. Technology Transformation
+    - Utilize cloud to migrate and modernize legacy infrastructure, applications, and data and analytic platforms
+
+2. Process Transformation
+    - Digitize, automate, and optimize business operations
+
+3. Organizational Transformation
+    - Reimagine the operational model, or how your business and technology teams work together to create customer value and meet strategic goals
+
+4. Product Transformation
+    - Reimagine the business model by creating new value propositions and revenue models
+
+### AWS CSF Key Business Outcome
+- Reduced business risk
+- Improved environmental, social, and governance (ESG) performance
+- Revenue growth
+- Increased operational efficiency
+
+### Perspectives and Foundational Capabilities
+1. Business perspective
+    - Ensures that cloud investments accelerate digital transformation and business outcomes
+2. People perspective
+    - Create a culture of continuous growth and learning where change is embraced
+3. Governace perspective
+    - Maximize organizational benefits while minimizing cloud-transformation-related risks
+4. Platform perspective
+    - Build enterprise-grade, scalable, hybrid cloud platforms, implement cloud-native solutions, and modernize existing infrastructure
+5. Security perspective
+    - Achieve the confidentiality, integrity, and availability needs of cloud data and workloads
+6. Operations perspective
+    - Ensure that the cloud services delivered meet business needs
+
+### Summary
+In summary, each organization's journey into the cloud is different, and in order to have an effective cloud adoption experience, it is necessary to  first envision the desired target state, understanding the organization's cloud readiness, then adapt an agile and iterative approach to transformation incrementally, and learn from experience to achive the optimal target state.
+
+Therefore, it is divided into four phases:
+1. Envision Phase
+    - Demonstrate how cloud adoption will help accelerate business outcomes and objectives
+2. Align Phase
+    - Identify capability gaps across the six CAF perspectives, identify cross-organizational dependencies, and recognize stakeholder concerns
+3. Launch Phase
+    - Deliver pilot initiatives in production and demonstrate incremental business value before scaling to full production
+4. Scale Phase
+    - Expand pilots, scaling up to meet desired business needs while sustaining business benefits
