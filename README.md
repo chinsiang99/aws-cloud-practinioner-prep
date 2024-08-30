@@ -7,3 +7,5 @@ It is made up with four domains
 2. Security and Compliance - 30%
 3. Cloud Technology and Service - 34%
 4. Billing, Pricing, and Support - 12%
+
+This repo will be categorized with four folders for each domain, and each folder has an associate README file
