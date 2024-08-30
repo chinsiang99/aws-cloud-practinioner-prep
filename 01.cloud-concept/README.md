@@ -151,3 +151,31 @@ Therefore, it is divided into four phases:
     - Deliver pilot initiatives in production and demonstrate incremental business value before scaling to full production
 4. Scale Phase
     - Expand pilots, scaling up to meet desired business needs while sustaining business benefits
+
+## Summary in a whole
+
+### Six Advantages of Cloud Computing
+1. Trade fixed expense for variable expense
+2. Benefit from massive economies of scale
+3. Stop guessing capacity
+4. Increase speed and agility
+5. Stop spending money running and maintaining data centers
+6. Go global in minutes
+
+### AWS Well-Architected Framework
+1. Operational Excellence
+2. Security
+3. Reliability
+4. Performance Efficiency
+5. Cost Optimization
+6. Sustainability
+
+<div align="center">
+  <img src="./well-architected.png" alt="well architected framework" width="300"/>
+</div>
+
+### AWS CAF (Cloud Adoption) framework
+
+<div align="center">
+  <img src="./cloud-transformation.png" alt="cloud-transformation" width="300"/>
+</div>
