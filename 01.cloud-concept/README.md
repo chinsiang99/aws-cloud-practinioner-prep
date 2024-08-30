@@ -49,3 +49,22 @@ Cloud = Internet
 Made up of copper wires and global network of billions of devices
 - Development of virtualization together with a piece of software called the hypervisor allowed us to think big, pulling together multiple servers and using all of their compute and storage resources together as if we're using one extremely large server
 - It is actually like the cloud service providers hosting the mainframe for us, instead of connecting to the mainframe computer  and the data centre at the same floor, we use the internet to connect to the countless servers linked by hypervisors through big service providers like AWS, AZURE, GCP
+
+# Cloud Computing Concepts
+
+## Benefits of Cloud Computing
+- you dont have to buy a computer with huge hard disk because you can save file on the cloud using services like Dropbox and these can be accessed by any machines on the internet
+- no need for physical servers or cabling
+- no need for server room setup and maintenance
+- no hardware replacemnet or procurement
+- pay on when and what you consume
+- scale up or down instantaneously and only pay for what you use
+- benefits from economy of scale
+
+## Six Major advantages
+1. Trade capital expense for variable expense
+2. Benefit from massive enocomies of scale
+3. Stop guessing capacity
+4. Increase speed and agility
+5. Stop spending money running and maintaining data centers
+6. Go global in minutes
