@@ -79,3 +79,18 @@
 ## Principle of Least Privilege
 - Who can access what?
 - Every role has a set of access permissions necessary to effectively completes its jobs, and the individual in the role should have no more and no less than the optimal level of access
+
+## Keeping accounts secured
+
+### Security Credentials
+- Password Policy: password requirement, rotation of passwords
+- Access key: to make programmatic calls to AWS; should be used temporarily
+
+### Multifactor Authentication (MFA)
+- Aka two-factor authentication (2FA)
+- User presents at least two pieces of evidence (factors) that verify they should access the said account
+
+### AWS Secrets Manager
+- Saves all your "secrets" for you
+- Secrets: passwords, credentials, tokens, access keys etc
+- Integrates with key AWS services
