@@ -114,3 +114,22 @@
 - easy to deploy and maintain
 - It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
 - It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
+
+## AWS Shield
+- Provides detection and automatic mitigations
+- Minimizes effects of DDoS atatcks on your apps
+- Helps minimize application downtime and latency when an attack happens
+
+### AWS Shield : Standard
+- Automatically enabled
+- Free
+- Protects web applications against a majority of common DDoS attacks
+
+### AWS Shield : Advanced
+- Continuous, 24/7 access to AWS DDoS response team
+- Near real-time visibility into events
+- Integrates with AWS WAF
+- Provides high-level protections, network and transport layer protections, and automated application traffic monitoring
+- Financial protection against DDoS-related spikes in charges for EC2, elastic load balancers, CloudFront, and Route 53
+- Available globally on CloudFront and Route 53 edge locations
+- Your web application can be hosted anywhere in the world and still be protected by AWS Shield
