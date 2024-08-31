@@ -47,7 +47,7 @@
 ## Conclusion
 Cloud = Internet
 Made up of copper wires and global network of billions of devices
-- Development of virtualization together with a piece of software called the hypervisor allowed us to think big, pulling together multiple servers and using all of their compute and storage resources together as if we're using one extremely large server
+- Development of virtualization together with a piece of software called the **hypervisor** allowed us to think big, pulling together multiple servers and using all of their compute and storage resources together as if we're using one extremely large server
 - It is actually like the cloud service providers hosting the mainframe for us, instead of connecting to the mainframe computer  and the data centre at the same floor, we use the internet to connect to the countless servers linked by hypervisors through big service providers like AWS, AZURE, GCP
 
 # Cloud Computing Concepts
