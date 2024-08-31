@@ -102,3 +102,15 @@
 - Visualize and operate on multiple AWS services from one place
 - Create logical groups of resources, then select a resource group to view metrics and take action
 - Helps IT admins make sure that IT infrastructure is running smoothly and alerts them when resources are not meeting internal compliance policies
+
+## AWS WAF (web application firewall)
+- Protects web apps running on the AWS Cloud from common web exploits
+- Firewall services for web applications
+- Protects web app against exploits that could compromise security or avaialbility
+- Protects apps from exploits that could force them to consume excessive resources
+- It imporves web traffic visibility
+- Provides cost-effective web app protection
+- Increased security and protetcion against web attacks
+- easy to deploy and maintain
+- It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
+- It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
