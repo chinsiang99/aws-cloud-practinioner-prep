@@ -177,3 +177,10 @@ You are managing multiple AWS resources and want to ensure that your environment
 Summary:
 Amazon Inspector is focused on security vulnerability assessments for your workloads.
 AWS Trusted Advisor provides a broader range of recommendations across cost, performance, security, and more.
+
+## Amazon GuardDuty
+- Continuous, 24/7 threat detection servicefor the AWS Cloud
+- Monitors for malicious activity and unauthorized behavior
+- Analyzes events to send actionable alerts via Cloud Watch
+- Uses machine learning, anomaly detection, and integrated threat intelligence to identify potential threats
+- Easy to deploy
