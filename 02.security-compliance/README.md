@@ -115,7 +115,7 @@
 - It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
 - It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
 
-## AWS Shield
+## AWS Shield (partially free)
 - Provides detection and automatic mitigations
 - Minimizes effects of DDoS atatcks on your apps
 - Helps minimize application downtime and latency when an attack happens
@@ -133,3 +133,11 @@
 - Financial protection against DDoS-related spikes in charges for EC2, elastic load balancers, CloudFront, and Route 53
 - Available globally on CloudFront and Route 53 edge locations
 - Your web application can be hosted anywhere in the world and still be protected by AWS Shield
+
+## Amazon Inspector
+- Automated security assessment service for applications
+- Automatically assesses for exposure, vulnerabilities, and deviation from best practices
+- Genrates detailed reports to help check for vulnerabilities
+- Security teams can get reports validating that tests were performed
+- Reduce risks of introducing security issues during deployment and development
+- Overall, it inspects your applications to find security issues
