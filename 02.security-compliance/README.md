@@ -141,3 +141,39 @@
 - Security teams can get reports validating that tests were performed
 - Reduce risks of introducing security issues during deployment and development
 - Overall, it inspects your applications to find security issues
+
+## AWS Trusted Advisor (partially free)
+- Guides provisioning of resources to follow AWS best practices
+- Scans your infrastructure and advises you on how it is or is not following AWS best practices
+- Based on five categories: cost optimization, performance, security, fault tolerance, service limits
+- Provides action recommendations to meet best practices
+
+### Seven Core Trusted Advisor Checks
+1. S3 bucket permissions
+2. Security groups - specific ports unrestricted
+3. IAM use
+4. MFA on root account
+5. Elastic Block Store (EBS) public snapshots
+6. Relational Database Service (RDS) public snapshots
+7. Service limits
+
+### Full Trusted Advisor Checks (paid)
+- More types of checks on top of core checks
+- Notifications through weekly updates
+- Set up automated actions in response to alerts using CloudWatch
+- Programmatic access to scan results via AWS Support API
+
+## When to Use Amazon Inspector vs. AWS Trusted Advisor:
+Use Amazon Inspector when:
+
+You need to perform detailed security assessments of your EC2 instances or container images.
+You want to identify and remediate specific security vulnerabilities in your workloads.
+You require continuous security monitoring to meet compliance requirements.
+Use AWS Trusted Advisor when:
+
+You want to **optimize your AWS environment** in terms of cost, performance, security, and fault tolerance.
+You need broad recommendations across various aspects of your AWS infrastructure, including cost savings and best practices.
+You are managing multiple AWS resources and want to ensure that your environment is well-architected and adheres to AWS best practices.
+Summary:
+Amazon Inspector is focused on security vulnerability assessments for your workloads.
+AWS Trusted Advisor provides a broader range of recommendations across cost, performance, security, and more.
