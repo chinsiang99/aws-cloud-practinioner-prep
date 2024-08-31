@@ -188,3 +188,20 @@ AWS Trusted Advisor provides a broader range of recommendations across cost, per
 ## AWS Artifact (Completely FREE)
 - On-demand self-service portal to download AWS security and compliance documents and independent software vendor (ISV) compliance reports
 - Review, accept, and track status of AWS agreemnts specific to your organization's industry
+
+## Governance and Compliance Services
+
+### Amazon CloudWatch (free tier every month)
+- Observes and monitors application performance
+- Set alarms and automated actions to activate at predetermined thresholds to automatically mitigate potential issues
+
+### Amazon CloudTrail (free tier every month)
+- Generates audit trails of every action taken by a user, role, or AWS service in your account
+
+### AWS Audit Manager (pay as you go)
+- Automates evidence collection to generate audit-ready reports to prove system compliance for audits
+
+### AWS Config (30 day free tier only)
+- Provides detailed views of AWS resource configurations in your AWS account
+- Tracks how configurations and relationships between resources change over time
+- Monitors configuration settings and sends alerts when a resource violates your rules
