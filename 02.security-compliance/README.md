@@ -94,3 +94,11 @@
 - Saves all your "secrets" for you
 - Secrets: passwords, credentials, tokens, access keys etc
 - Integrates with key AWS services
+
+# Security Services
+
+## AWS Systems Manager
+- Centralized control tower to manage AWS resources in multicloud and hybrid environments
+- Visualize and operate on multiple AWS services from one place
+- Create logical groups of resources, then select a resource group to view metrics and take action
+- Helps IT admins make sure that IT infrastructure is running smoothly and alerts them when resources are not meeting internal compliance policies
