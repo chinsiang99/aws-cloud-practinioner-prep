@@ -32,4 +32,46 @@
 - Data protection
 - Incident response
 
+# Access Management
 
+## Providing Access in AWS
+
+### Security Groups vs. NACLs
+
+| Security Groups | NACLs (Network Access Control Lists) |
+|-----------------|-------|
+| Protect at instance level | Protect at subnet level |
+| Stateful: traffic allowed in is allowed out ("remembers") | Stateless: in and out traffic need to be defined separately ("forgets") |
+| No explicit deny | Explicit deny (meaning that is more important than other rules) |
+| All inbound traffic blocked and outbound traffic allowed by default | All inbound and outbound traffic allowed by default |
+
+
+## Identity Acess management (IAM)
+- Manage access to services and resources in the AWS Cloud
+- Manage users and groups
+- Can provide access to users or other AWS services
+- Permissions are global; any access setting will be true all across regions
+- Follow principle of least privilege
+
+### Method 1 : Manage Users
+- Create users in IAM and assign them security credentials
+- Users can have very precise permission sets
+- Users can access AWS through AWS management console
+- You can provide programmatic access to data / resources
+- Programmatic access: applications directly access resources instead of humans doing the same activity
+
+### Method 2 : Manage IAM Roles
+- Create roles to manage permissions and what those roles can do
+- An entity assumes a role to obtain temporary security credentials to make API calls to your resources
+- Used to provide a user from another AWS account with access to your AWS account
+
+### Method 3 : Manage federated Users
+- enable identity federation: allow existing identities in your enterprise to access AWS without having to create an IAM user for each identity
+
+### Benefits of IAM
+- Enhanced security
+- granular Control
+- Ability to provide temporary credentials
+- Flexible Security credential management 
+- Federated access
+- Seamless integration across various AWS services
