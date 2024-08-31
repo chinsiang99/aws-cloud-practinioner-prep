@@ -75,3 +75,7 @@
 - Flexible Security credential management 
 - Federated access
 - Seamless integration across various AWS services
+
+## Principle of Least Privilege
+- Who can access what?
+- Every role has a set of access permissions necessary to effectively completes its jobs, and the individual in the role should have no more and no less than the optimal level of access
