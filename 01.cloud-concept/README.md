@@ -63,11 +63,17 @@ Made up of copper wires and global network of billions of devices
 
 ## Six Major advantages
 1. Trade capital expense for variable expense
+    - Pay only when you use computing resources, and only for how much you use.
 2. Benefit from massive enocomies of scale
+    - AWS aggregates usage from hundreds of thousands of customers in the cloud, which leads to higher economies of scale. This translates into lower pay-as-you-go prices.
 3. Stop guessing capacity
+    - When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity. With cloud computing, you can access as much or as little capacity as you need, and scale up and down as required with only a few minutes notice.
 4. Increase speed and agility
+    - IT resources are only a click away, which means that you reduce the time to make resources available to your developers from weeks to minutes. This dramatically increases agility for the organization, because the cost and time it takes to experiment and develop is significantly lower.
 5. Stop spending money running and maintaining data centers
+    - Companies can focus on projects that differentiate their business instead of maintaining data centers. With cloud computing, you can focus on your customers, rather than on the heavy lifting of racking, stacking, and powering physical infrastructure.
 6. Go global in minutes
+    - Applications can be deployed in multiple Regions around the world with a few clicks. This means that you can provide lower latency and a better experience for your customers at a minimal cost.
 
 ## AWS Well-Architected Framework
 - Allows Organizations to build the most secure, durable, efficient, and high-performing IT infrastructure possible
