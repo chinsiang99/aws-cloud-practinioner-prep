@@ -184,3 +184,7 @@ AWS Trusted Advisor provides a broader range of recommendations across cost, per
 - Analyzes events to send actionable alerts via Cloud Watch
 - Uses machine learning, anomaly detection, and integrated threat intelligence to identify potential threats
 - Easy to deploy
+
+## AWS Artifact (Completely FREE)
+- On-demand self-service portal to download AWS security and compliance documents and independent software vendor (ISV) compliance reports
+- Review, accept, and track status of AWS agreemnts specific to your organization's industry
