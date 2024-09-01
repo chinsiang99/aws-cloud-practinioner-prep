@@ -333,7 +333,7 @@ An AWS service for serverless computing is AWS Lambda.
 
 ### AWS Lambda
 
-AWS Lambda(opens in a new tab) is a service that lets you run code without needing to provision or manage servers. 
+AWS Lambda is a service that lets you run code without needing to provision or manage servers. 
 
 While using AWS Lambda, you pay only for the compute time that you consume. Charges apply only when your code is running. You can also run code for virtually any type of application or backend service, all with zero administration. 
 
@@ -653,3 +653,79 @@ With both network ACLs and security groups, you can configure custom rules for t
 <div align="center">
   <img src="./subnet8.png" alt="subnet8" width="300"/>
 </div>
+
+## Global Networking
+
+### Domain Name System (DNS)
+
+Suppose that AnyCompany has a website hosted in the AWS Cloud. Customers enter the web address into their browser, and they are able to access the website. This happens because of Domain Name System (DNS) resolution. DNS resolution involves a customer DNS resolver communicating with a company DNS server.
+
+You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address. 
+
+<div align="center">
+  <img src="./dns.png" alt="dns" width="300"/>
+</div>
+
+For example, suppose that you want to visit AnyCompany’s website. 
+
+1. When you enter the domain name into your browser, this request is sent to a customer DNS resolver. 
+
+2. The customer DNS resolver asks the company DNS server for the IP address that corresponds to AnyCompany’s website.
+
+3. The company DNS server responds by providing the IP address for AnyCompany’s website, 192.0.2.0.
+
+### Amazon Route 53
+
+Amazon Route 53 is a **DNS web service**. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. 
+
+Amazon Route 53 connects user requests to infrastructure running in AWS (such as Amazon EC2 instances and load balancers). It can route users to infrastructure outside of AWS.
+
+Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
+
+In the previous module, you learned about Amazon CloudFront, a content delivery service. The following example describes how Route 53 and Amazon CloudFront work together to deliver content to customers.
+
+### Example: How Amazon Route 53 and Amazon CloudFront deliver content
+
+<div align="center">
+  <img src="./route53.png" alt="route53" width="300"/>
+</div>
+
+Suppose that AnyCompany’s application is running on several Amazon EC2 instances. These instances are in an Auto Scaling group that attaches to an Application Load Balancer. 
+
+1. A customer requests data from the application by going to AnyCompany’s website. 
+
+2. Amazon Route 53 uses DNS resolution to identify AnyCompany.com’s corresponding IP address, 192.0.2.0. This information is sent back to the customer. 
+
+3. The customer’s request is sent to the nearest edge location through Amazon CloudFront. 
+
+4. Amazon CloudFront connects to the Application Load Balancer, which sends the incoming packet to an Amazon EC2 instance.
+
+### AWS Global Accelerator
+
+AWS Global Accelerator is a networking service that improves the availability and performance of your applications by directing traffic through the AWS global network infrastructure. It provides a set of static IP addresses that serve as a fixed entry point for your application, regardless of the underlying AWS infrastructure. Here's a more detailed look at what AWS Global Accelerator is and how it works
+
+AWS Global Accelerator helps improve the availability and performance of your applications by leveraging the AWS global network. It provides a set of static IP addresses that can be used to route traffic to your application endpoints across multiple AWS regions.
+
+### How They Work Together
+Step 1: DNS Resolution: Route 53 resolves the domain name to the IP addresses provided by AWS Global Accelerator or CloudFront distribution.
+
+Step 2: Traffic Routing:
+
+- Global Accelerator: Routes user requests to the nearest AWS region with the best performance. If your application’s traffic is routed through AWS Global Accelerator, it will direct users to the optimal endpoint based on health, location, and routing policies.
+- CloudFront: Once the request reaches the AWS region, CloudFront delivers cached content from its edge locations or forwards the request to your origin servers. CloudFront’s caching reduces the load on your origin and speeds up content delivery.
+
+Step 3: Content Delivery: CloudFront serves the cached or dynamic content to the user from the edge location closest to them, reducing latency and improving user experience.
+
+### Combining the Services:
+Scenario 1: Using Route 53 with CloudFront
+
+Setup: Route 53 can be used to manage DNS for your domain and point it to a CloudFront distribution.
+How It Works: When users request content from your domain, Route 53 resolves the domain name to the CloudFront distribution’s domain name. CloudFront then serves the content from the nearest edge location to the user.
+Scenario 2: Using Route 53 with Global Accelerator
+
+Setup: Route 53 can direct traffic to an AWS Global Accelerator.
+How It Works: Route 53 resolves the domain name to the static IP addresses provided by the Global Accelerator. Global Accelerator then routes the traffic to the optimal AWS region based on latency, health, and routing policies.
+Scenario 3: Using Global Accelerator with CloudFront
+
+Setup: You can use Global Accelerator to route traffic to a CloudFront distribution.
+How It Works: Global Accelerator routes the user requests to the nearest AWS region where your CloudFront distribution is set up. CloudFront then serves the content from its edge locations.
