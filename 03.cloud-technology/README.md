@@ -441,3 +441,18 @@ When you need to run containerized applications that require specific resources,
 For workloads where you want the flexibility of containers but without the need to manage the underlying infrastructure.
 When you need long-running or stateful applications, and want to leverage container orchestration with ECS or EKS.
 In summary, while both services offer serverless compute capabilities, AWS Lambda is better suited for short-lived, event-driven functions, whereas AWS Fargate is designed for running containerized applications that may need more control over resources and execution time.
+
+## Amazon Lightsail
+
+Amazon Lightsail is a simplified, cost-effective cloud platform provided by AWS. It is designed to make it easy for developers, small businesses, and individuals to deploy and manage small-scale applications or websites without needing to deal with the complexity of more advanced AWS services.
+
+### Key Features of Amazon Lightsail:
+
+#### Virtual Private Servers (VPS)
+- Lightsail provides pre-configured virtual private servers (instances) with a fixed amount of compute, memory, and storage. These servers are easy to deploy and manage, and you can choose from a range of operating systems and application stacks.
+
+#### Preconfigured Application Stacks
+- Lightsail offers blueprints for popular applications and development stacks, such as WordPress, LAMP (Linux, Apache, MySQL, PHP), Node.js, and more. This allows you to quickly launch applications with minimal setup.
+
+#### Simplified Management
+- Lightsail provides an easy-to-use interface for managing your resources, including instances, databases, load balancers, and networking. The interface is designed to be user-friend
