@@ -206,7 +206,15 @@ Throughout the day, as the number of customers increases, the coffee shop opens 
 
 Additionally, a coffee shop employee directs customers to the most appropriate register so that the number of requests can evenly distribute across the open registers. You can think of this coffee shop employee as a load balancer. 
 
-## Elastic Beanstalk (free to use)
+## AWS Elastic Beanstalk (free to use)
+
+With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+
+1. Adjust capacity
+2. Load balancing
+3. Automatic scaling
+4. Application health monitoring
+
 - handles deployment process
 - accomodates services developed using Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker
 - You retain control over resources at all time
