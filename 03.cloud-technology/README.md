@@ -198,3 +198,13 @@ If only a few registers are open, this matches the demand of customers who need 
 Throughout the day, as the number of customers increases, the coffee shop opens more registers to accommodate them. 
 
 Additionally, a coffee shop employee directs customers to the most appropriate register so that the number of requests can evenly distribute across the open registers. You can think of this coffee shop employee as a load balancer. 
+
+## Elastic Beanstalk (free to use)
+- handles deployment process
+- accomodates services developed using Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker
+- You retain control over resources at all time
+- pay only for other AWS recourses consumed to deploy
+- it is autoscaling
+- complete freedom to select AWS resources
+- allows manual management of infrastructure
+- provisions and operates the infrastructure
