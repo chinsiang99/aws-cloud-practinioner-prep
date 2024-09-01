@@ -369,3 +369,75 @@ Kubernetes is open-source software that enables you to deploy and manage contain
 AWS Fargate is a **serverless compute engine for containers**. It works with both Amazon ECS and Amazon EKS. 
 
 When using AWS Fargate, you do not need to provision or manage servers. AWS Fargate manages your server infrastructure for you. You can focus more on innovating and developing your applications, and you pay only for the resources that are required to run your containers.
+
+## Difference between Lambda and Fargate
+
+AWS Lambda and AWS Fargate are both serverless computing services provided by AWS, but they serve different purposes and are used for different types of workloads. Here's a breakdown of the differences between the two:
+
+AWS Lambda:
+1. Purpose:
+
+Function-as-a-Service (FaaS): AWS Lambda is designed for running small, single-purpose functions or tasks that are triggered by events. It is best suited for event-driven architectures, where your code is executed in response to specific events like changes in data, user actions, or HTTP requests.
+2. Execution Model:
+
+Short-lived and Stateless: Lambda functions are short-lived and stateless. They are meant to execute quickly (with a maximum execution time of 15 minutes) and do not retain state between invocations. If you need to maintain state, you would typically use external services like Amazon S3, DynamoDB, or RDS.
+3. Scaling:
+
+Automatic Scaling: Lambda automatically scales the number of instances of your function to handle incoming requests. You don't need to manage scaling manually; Lambda will scale up and down based on demand.
+4. Cost:
+
+Pay-per-Execution: With Lambda, you only pay for the compute time your code consumes, measured in milliseconds, and the number of requests. This makes it cost-effective for workloads with unpredictable or sporadic demand.
+5. Use Cases:
+
+Event-driven tasks: Such as file processing in S3, responding to API Gateway requests, or processing messages in an SQS queue.
+Automated backend tasks: Like triggering functions based on events in your application.
+Microservices: Running small, modular services that perform specific functions.
+AWS Fargate:
+1. Purpose:
+
+Container-as-a-Service (CaaS): AWS Fargate is designed for running containerized applications without needing to manage the underlying infrastructure. It is used with Amazon ECS (Elastic Container Service) or Amazon EKS (Elastic Kubernetes Service) to run containers in a serverless manner.
+2. Execution Model:
+
+Long-lived and Stateful/Stateless: Fargate can run both long-running services and short-lived tasks. Containers can be stateful or stateless, depending on how you design your application. You can use persistent storage like EBS or EFS if needed.
+3. Scaling:
+
+Managed Scaling: Fargate automatically provisions the necessary compute resources for your containers. You can scale your containers based on demand, either manually or through Auto Scaling policies.
+4. Cost:
+
+Pay-for-Resources: With Fargate, you pay for the vCPU and memory resources that your containers use. This makes it suitable for more predictable workloads where you need finer control over the resources allocated to your containers.
+5. Use Cases:
+
+Microservices: Running containerized microservices with a focus on portability and consistency across environments.
+Batch Processing: Running batch jobs in containers that may require more resources or longer execution times.
+Web Applications: Deploying web applications and APIs in containers that need to run continuously.
+CI/CD Pipelines: Running containerized tasks for continuous integration and deployment workflows.
+Key Differences:
+Execution Model:
+
+Lambda: Stateless, short-lived functions triggered by events (maximum execution time of 15 minutes).
+Fargate: Long-lived or short-lived containers that can be stateful or stateless, with more flexibility in execution time.
+Workload Type:
+
+Lambda: Best for event-driven tasks and small, modular functions.
+Fargate: Best for running containerized applications and services, whether they are short-lived tasks or long-running services.
+Scaling:
+
+Lambda: Automatically scales based on the number of incoming requests or events.
+Fargate: Scales based on the number of running containers, with finer control over resources.
+Pricing:
+
+Lambda: Pay-per-execution, measured in milliseconds.
+Fargate: Pay for vCPU and memory resources used by containers.
+Use Cases:
+
+Lambda: Ideal for lightweight, event-driven tasks or automation scripts.
+Fargate: Ideal for running full-fledged containerized applications, microservices, or batch processing tasks.
+When to Use AWS Lambda:
+When you need to run small, event-driven functions that execute in response to specific triggers.
+For workloads with unpredictable demand, where you only want to pay for the actual compute time used.
+For scenarios where you don't need to manage servers or containers and prefer a fully managed experience.
+When to Use AWS Fargate:
+When you need to run containerized applications that require specific resources, such as CPU and memory.
+For workloads where you want the flexibility of containers but without the need to manage the underlying infrastructure.
+When you need long-running or stateful applications, and want to leverage container orchestration with ECS or EKS.
+In summary, while both services offer serverless compute capabilities, AWS Lambda is better suited for short-lived, event-driven functions, whereas AWS Fargate is designed for running containerized applications that may need more control over resources and execution time.
