@@ -732,6 +732,24 @@ How It Works: Global Accelerator routes the user requests to the nearest AWS reg
 
 # Storage and Databases
 
+## Types of Storage
+1. Object Storage
+- Files are broken down into pieces called objects, which are placed in buckets
+- Stores massive amounts of unstructured data (like photos, videos), best suited for static data (data that doesn't change)
+- Components of an object: data, metadata and identifier
+- Example AWS object storage service: Amazon Simple Storage Service (Amazon S3)
+
+2. File Storage
+- Data is stored as pieces of information inside a folder
+- Has hierarchy, and folders can be inside other folders
+- Example AWS file storage service: Amazon Elastic File System (Amazon EFS)
+
+3. Block Storage
+- Stores data in units of blocks
+- Utilizes unique identifiers to make search efficient
+- Distributes and stores blocks in multiple places; when the data is requested, the blocks are reassembled for the user
+- Example AWS block storage service: Amazon Elastic Block Store (Amazon EBS)
+
 ## Instance stores
 
 Block-level storage volumes behave like physical hard drives.
