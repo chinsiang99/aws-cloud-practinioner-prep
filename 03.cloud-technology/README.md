@@ -1212,3 +1212,16 @@ Redshift automatically adds capacity to handle an increase in concurrent queries
 
 Conclusion:
 Amazon Redshift is a powerful data warehousing solution that is ideal for organizations that need to analyze large datasets and generate insights from their data. Its combination of scalability, performance, and integration with the broader AWS ecosystem makes it a strong choice for big data analytics and business intelligence workloads.
+
+## AWS Database Migration Service (AWS DMS)
+
+AWS Database Migration Service (AWS DMS) enables you to migrate relational databases, nonrelational databases, and other types of data stores.
+
+With AWS DMS, you move data between a source database and a target database. The source and target databases can be of the same type or different types. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. 
+
+For example, suppose that you have a MySQL database that is stored on premises in an Amazon EC2 instance or in Amazon RDS. Consider the MySQL database to be your source database. Using AWS DMS, you could migrate your data to a target database, such as an Amazon Aurora database.
+
+## Other use cases for AWS DMS
+- Enabling developers to test applications against production data without affecting production users
+- Combining several databases into a single database
+- Sending ongoing copies of your data to other target sources instead of doing a one-time migration
