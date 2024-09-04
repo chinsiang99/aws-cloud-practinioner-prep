@@ -25,6 +25,36 @@
 - AWS is responsibility of the security of the Cloud
 - We or customers are responsibility with the security in the Cloud
 
+The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
+
+<div align="center">
+  <img src="./shared-responsibility.png" alt="shared-responsibility" width="300"/>
+</div>
+
+You can think of this model as being similar to the division of responsibilities between a homeowner and a homebuilder. The builder (AWS) is responsible for constructing your house and ensuring that it is solidly built. As the homeowner (the customer), it is your responsibility to secure everything in the house by ensuring that the doors are closed and locked. 
+
+### Customers: Security in the cloud
+Customers are responsible for the security of everything that they create and put in the AWS Cloud.
+
+When using AWS services, you, the customer, maintain complete control over your content. You are responsible for managing security requirements for your content, including which content you choose to store on AWS, which AWS services you use, and who has access to that content. You also control how access rights are granted, managed, and revoked. 
+
+The security steps that you take will depend on factors such as the services that you use, the complexity of your systems, and your company’s specific operational and security needs. Steps include selecting, configuring, and patching the operating systems that will run on Amazon EC2 instances, configuring security groups, and managing user accounts. 
+
+### AWS: Security of the cloud
+AWS is responsible for security of the cloud.
+
+AWS operates, manages, and controls the components at all layers of infrastructure. This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate. 
+
+AWS is responsible for protecting the global infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure includes AWS Regions, Availability Zones, and edge locations.
+
+AWS manages the security of the cloud, specifically the physical infrastructure that hosts your resources, which include:
+- Physical security of data centers
+- Hardware and software infrastructure
+- Network infrastructure
+- Virtualization infrastructure
+
+Although you cannot visit AWS data centers to see this protection firsthand, AWS provides several reports from third-party auditors. These auditors have verified its compliance with a variety of computer security standards and regulations.
+
 ## Security in the Cloud
 - Identity and access management (IAM)
 - Detective controls
@@ -113,7 +143,6 @@
 - Increased security and protetcion against web attacks
 - easy to deploy and maintain
 - It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
-- It can be deployed on Amazon CloudFront, Application Load Balancer, Amazon API Gateway, or AWS AppSync
 
 ## AWS Shield (partially free)
 - Provides detection and automatic mitigations
@@ -164,17 +193,21 @@
 - Programmatic access to scan results via AWS Support API
 
 ## When to Use Amazon Inspector vs. AWS Trusted Advisor:
-Use Amazon Inspector when:
+
+- Use Amazon Inspector when:
 
 You need to perform detailed security assessments of your EC2 instances or container images.
 You want to identify and remediate specific security vulnerabilities in your workloads.
 You require continuous security monitoring to meet compliance requirements.
-Use AWS Trusted Advisor when:
+
+- Use AWS Trusted Advisor when:
 
 You want to **optimize your AWS environment** in terms of cost, performance, security, and fault tolerance.
 You need broad recommendations across various aspects of your AWS infrastructure, including cost savings and best practices.
 You are managing multiple AWS resources and want to ensure that your environment is well-architected and adheres to AWS best practices.
-Summary:
+
+- Summary:
+
 Amazon Inspector is focused on security vulnerability assessments for your workloads.
 AWS Trusted Advisor provides a broader range of recommendations across cost, performance, security, and more.
 

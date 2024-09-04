@@ -206,7 +206,7 @@ Therefore, it is divided into four phases:
 3. Reliability
 4. Performance Efficiency
 5. Cost Optimization
-6. Sustainability
+6. Sustainability (environment impact - energy consumption, efficiency)
 
 <div align="center">
   <img src="./well-architected.png" alt="well architected framework" width="300"/>
