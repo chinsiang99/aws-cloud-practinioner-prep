@@ -44,3 +44,38 @@
     - ethernet
 2. WAN (Wide area Network)
     - connects devices in a large geographical area, such as multiple cities or countries. WANs are used to connect LANs and use technologies such as fibre-optic cables and satelities to transmit data
+
+# Internet Protocol Address structure (IP address)
+
+<div align="center">
+  <img src="./ip-structure.png" alt="ip-structure" width="300"/>
+</div>
+
+- ipv4 has 4 8-bits splitted by a dot . (meaning that the largest is 256)
+
+# IPv4 and IPv6
+<div align="center">
+  <img src="./ipv4-6.png" alt="ipv4-6" width="300"/>
+</div>
+
+# Classles Inter-Domain Routing (CIDR)
+<div align="center">
+  <img src="./cidr.png" alt="cidr" width="300"/>
+</div>
+
+# CIDR example 1
+<div align="center">
+  <img src="./cidr1.png" alt="cidr1" width="300"/>
+</div>
+- ip address available = 2^8
+
+# CIRD exmaple 2
+<div align="center">
+  <img src="./cidr2.png" alt="cidr2" width="300"/>
+</div>
+- ip address available = 2^16
+
+# CIRD special cases
+<div align="center">
+  <img src="./cidr3.png" alt="cidr3" width="300"/>
+</div>
