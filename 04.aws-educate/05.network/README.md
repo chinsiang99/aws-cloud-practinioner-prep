@@ -33,3 +33,14 @@
     - responsible for formatting and delivering information to the application layer for further processing or display. Translates data based on syntax that the application accepts
 7. application layer (layer 7)
     - closest to the user, identifying communication partners, determining resource availability, synchronizing communication
+
+# Network Models
+1. peer-to-peer model diagram
+2. client-server model diagram
+
+# Network Types
+1. LAN (Local area Network)
+    - connects devices in a limited geographical area such as floor, building or campus
+    - ethernet
+2. WAN (Wide area Network)
+    - connects devices in a large geographical area, such as multiple cities or countries. WANs are used to connect LANs and use technologies such as fibre-optic cables and satelities to transmit data
