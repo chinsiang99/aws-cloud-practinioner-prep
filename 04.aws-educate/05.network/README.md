@@ -89,3 +89,68 @@
 <div align="center">
   <img src="./subnet-aws.png" alt="subnet-aws" width="300"/>
 </div>
+
+# Network Gateways
+1. internet gateway
+    - each vpc can only have one internet gateway
+2. virtual private gateway
+    - site-to-site connection
+
+# Route tables
+- mechanism to direct traffic in vpc
+
+# Security group
+- instance level, not subnet level
+<div align="center">
+  <img src="./security-inbound.png" alt="security-inbound" width="300"/>
+</div>
+
+<div align="center">
+  <img src="./security-outbound.png" alt="security-outbound" width="300"/>
+</div>
+
+# Network ACL
+- subnet level
+
+# Network ACL rule
+<div align="center">
+  <img src="./nacl-rule.png" alt="nacl-rule" width="300"/>
+</div>
+
+<div align="center">
+  <img src="./default-rule.png" alt="default-rule" width="300"/>
+</div>
+
+# Comparing nacl and security group
+<div align="center">
+  <img src="./nacl-security-group.png" alt="nacl-security-group" width="300"/>
+</div>
+
+# NAT gateway
+<div align="center">
+  <img src="./nat-gateway.png" alt="nat-gateway" width="300"/>
+</div>
+
+# AWS vpn
+<div align="center">
+  <img src="./aws-vpn.png" alt="aws-vpn" width="300"/>
+</div>
+
+# AWS direct connect
+- if you wish to have a lower latency compared to vpn
+- it does not touch the public internet, hence it is faster
+<div align="center">
+  <img src="./aws-direct-connect.png" alt="aws-direct-connect" width="300"/>
+</div>
+
+# VPC peering
+- communication between vpc
+<div align="center">
+  <img src="./vpc-peering.png" alt="vpc-peering" width="300"/>
+</div>
+
+# AWS transit gateway
+- automatically scale
+<div align="center">
+  <img src="./transit-gateway.png" alt="transit-gateway" width="300"/>
+</div>
