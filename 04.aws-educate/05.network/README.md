@@ -79,3 +79,8 @@
 <div align="center">
   <img src="./cidr3.png" alt="cidr3" width="300"/>
 </div>
+
+# Subnet cidr block
+<div align="center">
+  <img src="./subnet-cidr.png" alt="subnet-cidr" width="300"/>
+</div>
