@@ -84,3 +84,8 @@
 <div align="center">
   <img src="./subnet-cidr.png" alt="subnet-cidr" width="300"/>
 </div>
+
+# Subnetting in AWS
+<div align="center">
+  <img src="./subnet-aws.png" alt="subnet-aws" width="300"/>
+</div>
